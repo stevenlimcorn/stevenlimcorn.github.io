@@ -1,0 +1,24 @@
+Hello!
+
+My name is Steven Limcorn
+I'm a university student at University of Queensland who is currently pursuing a major in machine learning.
+
+As a programming enthusiast, I have passion in visual design and solving complex problems.
+
+"Hardworking" "Passionate" "Ambitious" are words that describe me best.
+
+Hobbies
+
+Basketball
+Football/Soccer
+Futsal
+Online games
+Programming
+Programming Language
+
+Python
+Java
+C
+SQL
+HTML
+CSS

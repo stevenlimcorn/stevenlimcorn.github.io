@@ -1,0 +1,1111 @@
+html, body{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16pt;
+	text-align: left;
+	height: 100%;
+	width: auto;
+	margin:0px;
+	padding:0px; 
+	color: rgb(29, 29, 31);
+	background-color: white;
+}
+
+table{
+	width:100%;
+	height: 30px;
+	border-spacing:0; 
+}
+
+#polygon {
+	background-color: #1D1D1F;
+}
+
+#contacts {
+	width: 20%;
+	height: 100%;
+	float: right;
+}
+
+#contacts ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#contacts li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #1B1B1B;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin: 12.5% 0;
+	text-align: center;
+}
+
+#contacts li a {
+	font-size: 35px;
+}
+
+#contacts li.facebook:hover {
+	background-color: #3B5998;
+	color: white;
+}
+
+#contacts li.instagram:hover {
+	background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color: white;
+}
+
+#contacts li.snapchat:hover{
+	background: #fffc00;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#contacts li.linkedin:hover {
+	background: #0E75A8;
+	color: white;
+}
+
+.profile{
+	float: left;
+	height: 100%;
+	width: 80%;
+	background-color: white;
+	clip-path: circle(70.0% at 38% 49%);
+}
+
+#about {
+	margin: 5% 0%;
+	width: 100%;
+	height: max-content;
+	background-color: white;
+	text-align: left;
+	color: #1b1b1b;
+	display: flex;
+}
+
+#about-me{
+	height: max-content;
+	width: 45%;
+	padding-left: 15%;
+}
+
+#about p {
+	font-size: 14pt;
+	margin: 50px 0 0 0;
+}
+
+.briskuy {
+	width: 95%;
+	height: max-content;
+	background-image: url('briskuy_blur.jpg');
+	background-size: cover;
+	text-align: center;
+	display: block;
+	padding: 2.5%;
+}
+
+.briskuy h1 {
+	font-weight: 500;
+	padding: 2% 0;
+}
+
+.blur-box {
+	background-color: white;
+	opacity: 0.6;
+	width: 60%;
+	border-radius: 30px;
+	margin: 2.5% auto;
+	padding: 2%;
+}
+
+#details {
+	width: 35%;
+	height: max-content;
+	padding-left: 5%;
+}
+
+#details ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+#details li {
+	font-size: 10pt;
+	padding-top: 10px;
+}
+
+.title {
+	color: #000000;
+	display: block;
+	position: absolute;
+	width: 65%;
+    top: 40%;
+    left: 40%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#nav-table.work-table{
+	background: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	text-shadow: none;
+	color: white;
+}
+
+#nav-table{
+	background-color: white;
+	color: #000000;
+	border-bottom: 1px solid #F8F8F8;
+	opacity: 0.9;
+	display: block;
+	position: fixed;
+	padding-top: 1%;
+	padding-left: 2.5%;
+	text-shadow: 4px 4px 4px #aaa;
+	width:97.5%;
+	height: 50px;
+	transition: 0.3s ease-in-out;
+}
+
+.nav{
+	width: 140px;
+	text-align: center;
+}
+
+td.nav a.nav-bar:hover{
+	color: inherit;
+	display: block;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+td.nav a.nav-bar{
+	color: inherit;
+	text-decoration: none;
+}
+
+#footer-container {
+	height: max-content;
+	background-color: #f2f2f2;
+	display: flex;
+}
+
+#left-footer{
+	width: 25%;
+	padding: 2% 0 0 15%;
+	color: black;
+	font-size: 10pt;
+}
+
+#left-footer h3 {
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+
+#right-footer{
+	padding: 2% 0 0 15%;
+	width: 45%;
+	color: black;
+	font-size: 12pt;
+}
+
+#right-footer a.text{
+	display: inline-block;
+	padding-left: 2.5%;
+	font-size: 10pt;
+	text-decoration:none;
+	color: black;
+}
+
+#right-footer a.text:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+#right-footer h3{
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+
+#bottom-footer{
+	width: 100%;
+	clear: both;
+	height: fit-content;
+	bottom: 0;
+	position: relative;
+	background-color: #f2f2f2;
+	opacity: 0.9;
+	color: #0c0c0d;
+	text-align: center;
+	font-size: 10pt;
+}
+
+#bottom-footer p{
+	text-align: center;
+	margin: 0;
+	padding: 0.5% 0;
+}
+
+.social#facebook:hover {
+	background-color: #3B5998;
+	color: white;
+}
+
+.social#instagram:hover {
+	background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color: white;
+}
+
+.social#snapchat:hover{
+	background: #fffc00;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.social#linkedin:hover {
+	background: #0E75A8;
+	color: white;
+}
+
+#footer-list{
+	padding: 0;
+    margin: 0;
+	list-style-type: none;
+}
+
+#footer-list li{
+	height: 97.5%;
+	width: 30%;
+	display: inline-block;
+	margin-top: 2.5%;
+}
+
+.fa {
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #1D1D1F;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin: auto 3px;
+    width: 25px;
+}
+
+.large {
+	color: white;
+	background: none;
+}
+
+#work {
+	text-align: center;
+	background-color: white;
+	width: 100%;
+}
+
+#work h3 {
+	font-weight: 500;
+}
+
+.headings {
+	font-weight: 500;
+}
+
+#project {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: fit-content;
+	padding: 2.5% 0;
+}
+
+#work img {
+	width: 50%;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 1px -0.5px hsla(0,0%,100%,.7), 3px 3px 7px -3px rgba(0,0,0,.1);
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+}
+
+.button-text {
+	font-size: 12pt;
+	padding: 0;
+	margin: 0;
+	color: black;
+	text-decoration: none;
+}
+
+#invision {
+	width: auto;
+	height: fit-content;
+}
+
+.button-text:hover {
+	color:black;
+	text-decoration: underline;
+}
+
+#experience {
+	background-color: #FAFAFA;
+	height: auto;
+	width: 100%;
+	padding: 2.5% 0;
+}
+
+#container-box {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.background {
+	text-align: left;
+	width: 100%;
+	height: 80%;
+	background-color: #1D1D1F;
+	display: block;
+	color: white;
+	margin-top: -30px;
+}
+
+.background .jeans {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	background-image: url("jeans4.jpg");
+}
+
+.background .doctor {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	background-image: url("hospital.jpeg");
+	background-size: cover;
+}
+.box {
+	top: 50%;
+	position: relative;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50%;
+}
+
+.work-title {
+	height: 15%;
+}
+
+.job-description {
+	width: 40%;
+	float: right;
+	text-align: right;
+	height: 100%;
+	vertical-align: top;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.job-description p {
+	padding: 0;
+	margin: 0;
+	font-size: 12pt;
+}
+
+.company h1 {
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
+	font-size: 20pt;
+	height: 100%;
+}
+
+.company {
+	width: 60%;
+	float: left;
+	text-align: left;
+	height: 100%;
+}
+
+.line {
+	width: 100%;
+	border-bottom: 2px solid white;
+	height: 1%;
+	margin-bottom: 4%;
+}
+
+.job-details h3{
+	font-size: 15pt;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+.introduction-container-box {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.introduction {
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 100%;
+}
+
+.introduction-container-box h1 {
+	margin: 2% 0;
+	font-weight: 500;
+	font-size: 25pt;
+}
+
+.introduction-container-box p{
+	font-weight: normal;
+	font-size: 12pt;
+	padding: 1% 0%;
+}
+
+.design-process {
+	margin-left: 5%;
+	width: 45%;
+	height: 100%;
+}
+
+.design-process p {
+	color: grey; 
+	font-size: 14pt;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.process-label h3 {
+	padding: 0;
+	margin: 0;
+	text-align: justify;
+	font-weight: normal;
+}
+
+.process-label {
+	height: 10%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F2F2F2;
+	margin-top: 2.5%;
+	padding: 2.5% 2.5%;
+}
+
+.process-label span {
+	color: grey;
+}
+
+#role-container {
+	width: 100%;
+	height: max-content;
+	background-color: #f7f7f7;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#role-container h1 {
+	margin-top: 0;
+	width: 65%;
+	font-weight: 500;
+	font-size: 25pt;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#role {
+	width: 65%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.role-info {
+	display: flex;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 45%;
+	margin-right: 5%;
+}
+
+.info p {
+	text-align:center; 
+ 	vertical-align: middle;
+  	display: table-cell;
+}
+
+.info {
+	width: 90%;
+	height: 90%;
+	padding: 10%;
+	background-color: #1B1B1B;
+	display: table;
+	margin: 0;
+}
+
+#method-container {
+	height: max-content;
+	padding: 2.5% 0;
+	width: 100%;
+	background: #1b1b1b;
+	color: white;
+}
+
+#method-container h1 {
+	margin-top: 0;
+	font-weight: 500;
+	font-size: 25pt;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#method {
+	width: 65%;
+	height: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+#method-info {
+	width: 100%;
+	height: max-content;
+}
+
+#laser-machine {
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	height: max-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.video{
+	width: 40%;
+	height: max-content;
+	display: flex;
+}
+
+.video video {
+	width: 100%;
+}
+
+.image {
+	width: 60%;
+	height: max-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.image img {
+	width: 48%;
+	height: auto;
+	display: flex;
+	padding: 0 0 3.8% 2%;
+}
+
+.sample {
+	width: 100%;
+}
+
+.sample img {
+	display: block;
+	width: 100%;
+}
+
+#project-description {
+	width: 100%;
+	height: max-content;
+	background: #F7F7F7;
+	padding: 1% 0;
+}
+
+#project-description h1 {
+	font-weight: 500;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#project-container {
+	width: 80%;
+	height: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 2.5% 0;
+}
+
+.project-info {
+	width: 39%;
+	margin-right: 1%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.project-info h2 {
+	color: grey;
+	font-weight: 500;
+	margin: 0;
+	font-size: 20pt;
+}
+
+.project-info h3 {
+	color: grey;
+	font-size: 15pt;
+	font-weight: 400;
+}
+
+.project-info p {
+	font-size: 12pt;
+	font-weight: 400;
+}
+
+.project-aim {
+	width: 80%;
+	padding: 5% 10%;
+	margin-top: 5%;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 1px -0.5px hsla(0,0%,100%,.7), 3px 3px 7px -3px rgba(0,0,0,.1);
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+}
+
+.project-details {
+	width: 80%;
+	padding: 5% 10%;
+	margin-top: 5%;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 1px -0.5px hsla(0,0%,100%,.7), 3px 3px 7px -3px rgba(0,0,0,.1);
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+}
+
+.project-display {
+	margin: 2% 1% 0 1%;
+	width: 57%;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 1px -0.5px hsla(0,0%,100%,.7), 3px 3px 7px -3px rgba(0,0,0,.1);
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+	display: block;
+}
+
+.project-display h3 {
+	margin: 2% auto;
+	font-weight: 600;
+	padding: 0;
+}
+
+.project-display img {
+	width: 75%;
+}
+
+@media (max-width:1100px) {
+	#polygon {
+		background-color: white;
+	}
+	.profile {
+		clip-path: none;
+	}
+	.briskuy h1{
+		font-size: 25pt;
+	}
+	.blur-box p {
+		font-size: 14pt;
+	}
+}
+
+@media (max-width: 860px) {
+	#left-footer {
+		padding-left: 10%;
+		width: 30%;
+	}
+	#right-footer {
+		padding-left: 10%;
+		width: 50%;
+	}
+	#right-footer a.text {
+		font-size: 9pt;
+	}
+	#bottom-footer {
+		font-size: 9pt;
+		height: 3%;
+	}
+	.headings {
+		font-size: 20pt;
+	}
+	#work h3 {
+		font-size:13pt;
+	}
+	#work p {
+		font-size: 11pt;
+	}
+	.social {
+		height: 20px;
+		line-height: 20px;
+		margin: auto 1px;
+		width: 20px;
+	}
+	.company h1 {
+		font-size: 17pt;
+	}
+	.job-description p {
+		font-size: 11pt;
+	}
+	.job-description {
+		width: 50%;
+	}
+	.company {
+		width: 50%;
+	}
+	.job-details h3 {
+		font-size: 11pt;
+	}
+	.introduction h1 {
+		font-size: 20pt;
+	}
+	.introduction p {
+		font-size: 11pt;
+	}
+	#role-container h1 {
+		font-size: 20pt;
+	}
+	.info p {
+		font-size: 11pt;
+	}
+	.design-process p {
+		font-size: 11pt;
+	}
+	.process-label h3 {
+		font-size: 15pt;
+	}
+	#method-container h1 {
+		font-size: 20pt;
+	}
+	#method-info p {
+		font-size: 11pt;
+	}
+	#project-description h1 {
+		font-size: 20pt;
+	}
+	#project-description h2{
+		font-size: 17pt;
+	}
+	#project-description h3 {
+		font-size: 12pt;
+	}
+	.project-info {
+		width: 100%;
+		margin: 0;
+	}
+	.project-display {
+		width: 100%;
+		padding: 0;
+		margin: 5% 0 0 0;
+	}
+	iframe {
+		width: 420px;
+		height: 230px;
+	}
+	.blur-box {
+		width: 80%;
+	}
+}
+
+@media (max-width: 700px) {
+	.headings {
+		font-size: 17pt;
+	}
+	#work h3 {
+		font-size:12pt;
+	}
+	#work p {
+		font-size: 10pt;
+	}
+	#right-footer li{
+		width: 40%;
+	}
+	#about-me {
+		padding-left: 10%;
+		width: 50%;
+	}
+	#about-me p {
+		margin-top: 30px;
+		font-size: 12pt;
+	}
+	#about-me h2 {
+		font-size: 16pt;
+	}
+	#details p {
+		font-size: 10pt;
+		margin-top: 30px;
+	}
+	#details li {
+		font-size: 9pt;
+	}
+	.company h1 {
+		font-size: 15pt;
+	}
+	.process-label h3 {
+		font-size: 13pt;
+	}
+	#method-container h1 {
+		font-size: 17pt;
+	}
+	#role-container h1 {
+		font-size: 17pt;
+	}
+	.introduction h1 {
+		font-size: 17pt;
+	}
+	.briskuy h1 {
+		font-weight: 500;
+		padding: 2% 0;
+		font-size: 17pt;
+	}
+	iframe {
+		width: 370px;
+		height: 200px;
+	}
+	.briskuy h1{
+		font-size: 20pt;
+	}
+	.blur-box p {
+		font-size: 12pt;
+	}
+}
+
+@media (max-width: 520px) {
+	#left-footer {
+		padding-left: 5%;
+		width: 35%;
+	}
+	#right-footer {
+		padding-left: 5%;
+		width: 55%;
+	}
+	#right-footer a.text {
+		font-size: 9pt;
+	}
+	#right-footer h3 {
+		font-size: 10pt;
+	}
+	#left-footer p{
+		font-size: 9pt;
+	}
+	#left-footer h3 {
+		font-size: 10pt;
+	}
+	.box {
+		width: 90%;
+	}
+	#method-info p {
+		font-size: 10pt;
+	}
+	.process-label h3 {
+		font-size: 12pt;
+	}
+	#project-description h1 {
+		font-size: 17pt;
+	}
+	#project-description h2 {
+		font-size: 14pt;
+	}
+	iframe {
+		width: 300px;
+		height: 150px;
+	}
+	.briskuy h1{
+		font-size: 20pt;
+	}
+	.blur-box p {
+		font-size: 12pt;
+	}
+	.blur-box .button-text {
+		font-size: 10pt;
+	}
+} 
+
+@media (max-width: 470px) {
+	#contacts li {
+		height: 40px;
+		width: 40px;
+	}
+	#contacts li a {
+		font-size: 21px;
+	}
+	.headings {
+		font-size: 16pt;
+	}
+	#work h3 {
+		font-size:12pt;
+	}
+	#work p {
+		font-size: 9pt;
+	}
+	#left-footer {
+		padding-left: 5%;
+		width: 25%;
+	}
+	#left-footer p{
+		font-size: 8pt;
+	}
+	#left-footer h3 {
+		font-size: 9pt;
+	}
+	#right-footer {
+		padding-left: 5%;
+		width: 65%;
+	}
+	#right-footer a.text {
+		font-size: 8pt;
+	}
+	#right-footer h3 {
+		font-size: 9pt;
+	}
+	#bottom-footer {
+		font-size: 7pt;
+		height: 2%;
+	}
+	#method-container h1 {
+		font-size: 15pt;
+	}
+	.introduction h1 {
+		font-size: 15pt;
+	}
+	.briskuy h1{
+		font-size: 25pt;
+	}
+	.blur-box p {
+		font-size: 14pt;
+	}
+	iframe {
+		width: 300px;
+		height: 170px;
+	}
+	.briskuy h1{
+		font-size: 18pt;
+	}
+	.blur-box p {
+		font-size: 10pt;
+	}
+}
+
+@media (max-width: 400px) {
+	#right-footer a.text {
+		display: none;
+	}
+	#bottom-footer {
+		font-size: 7pt;
+		height: 2%;
+	}
+	#left-footer {
+		padding-left: 5%;
+		width: 45%;
+	}
+	#right-footer {
+		padding-left: 5%;
+		width: 45%;
+	}
+	#right-footer ul {
+		display: table;
+	}
+	#right-footer li {
+		display: inline;
+	}
+	.social {
+		height: 25px;
+		line-height: 25px;
+		margin: auto 3px;
+		width: 25px;
+	}
+	#about-me {
+		padding-left: 10%;
+		width: 50%;
+	}
+	#about-me p {
+		margin-top: 30px;
+		font-size: 10pt;
+	}
+	#about-me h2 {
+		font-size: 14pt;
+	}
+	#details p {
+		font-size: 10pt;
+		margin-top: 30px;
+	}
+	#details li {
+		font-size: 9pt;
+	}
+	.box {
+		width: 95%;
+	}
+	.design-process {
+		width: 100%;
+		margin: 5% 0;
+	}
+	.role-info {
+		width: 100%;
+	}
+}
+
+@media (max-width: 350px) {
+	.social {
+		height: 20px;
+		line-height: 20px;
+		margin: auto 3px;
+		width: 20px;
+	}
+	.job-description {
+		display: none;
+	}
+	.company {
+		width: 100%;
+	}
+}
