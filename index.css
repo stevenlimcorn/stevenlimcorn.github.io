@@ -551,7 +551,7 @@ td.nav a.nav-bar{
 	width: 65%;
 	height: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1085,6 +1085,9 @@ td.nav a.nav-bar{
 	}
 	.box {
 		width: 95%;
+	}
+	#role {
+		flex-direction: column;
 	}
 	.design-process {
 		width: 100%;
