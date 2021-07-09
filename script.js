@@ -1,13 +1,7 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var image = $(".background").css("height");
-        image = parseFloat(image.slice(0, image.length - 2)) - 200;
-        // console.log(image - 200.0);
-        var scroll = $(window).scrollTop();
-        if (scroll > image) {
-            $('#nav-table').removeClass('work-table');
-        } else {
-            $('#nav-table').addClass('work-table');
-        }
-    })
-})
+var setActive = function(object) {
+    document.getElementById("tab-active").removeAttribute("id")
+    object.setAttribute("id", "tab-active")
+    document.getElementById("panel-active").removeAttribute("id")
+    var index = $('li#tab-active').index()
+    document.getElementsByClassName("panel-style")[index].setAttribute("id", "panel-active")
+};

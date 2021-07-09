@@ -1,0 +1,623 @@
+/* GLOBAL*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+body,h1,ul {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 36pt;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 25pt;
+    margin: 0;
+}
+
+#introduction, #about, #experience, #project, #contact, footer{
+    padding: 0% 15%;
+    scroll-margin-top: 4.5em;
+}
+
+/* Navbar Section */
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15%;
+    border-bottom: 1px solid #F8F8F8;
+    box-shadow: 0 3px 3px -5px;
+    position: fixed;
+    background-color: rgb(255, 255, 255, 0.95);
+    width: 70%;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+#header-button {
+    border-radius: 4px;
+    border: 2px solid#027BFE;
+    text-align: center;
+    padding: .5%;
+    width: fit-content;
+    margin: 0;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-size: 11pt;
+}
+
+#header-button a {
+    text-decoration: none;
+    color:  #027BFE;
+}
+
+#header-button:hover {
+    background-color: rgb(2,123,254, 0.1);
+}
+  
+#logo,nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+  
+nav li {
+    list-style: none;
+    margin: 0 2em 0 0;
+    cursor: pointer;
+    font-size: 11pt;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 2px;
+    padding: 2px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #027BFE;
+}
+
+nav a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #027BFE;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+/* INTORDUCTION SECTION */
+
+#introduction {
+    margin-top: 13%;
+    margin-bottom: 13%;
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#introduction-text {
+    width: 60%;
+}
+
+#introduction-image {
+    width: 35%;
+    padding-left: 5%;
+}
+
+/* ABOUT SECTION */
+
+#experience, #about, #project, #contact {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#about {
+    background-color: rgba(2,123,254, 0.9);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-content {
+    width: 55%;
+    color: white;
+    padding-right: 5%;
+}
+
+#about-content ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 5em;
+    list-style: none;
+    list-style-position: inside;
+}
+
+#about-content li {
+    padding-right:5%;
+}
+
+#about-content li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: green;
+    width: 1.3em;
+}
+
+#about-image {
+    width: 35%;
+    padding-left: 5%;
+}
+
+/* EXPERIENCE SECTION */
+#experience-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2% 0;
+}
+
+#tablist {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    width: 18%;
+    margin-right: 2%;
+}
+
+#job-panel {
+    width: 78%;
+    margin-left: 2%;
+}
+
+.tablist-style {
+    border-left: solid 3px grey;
+    cursor: pointer;
+    padding: 1% 5%;
+    transition: all 0.2s linear;
+}
+
+#tab-active {
+    border-color: #027BFE;
+    color: #027BFE;
+    background-color: rgba(2,123,254, 0.3);
+}
+
+.panel-style {
+    display: none;
+    transition: all 0.6s linear;
+    transition-property: opacity;
+}
+
+.panel-style h3, .panel-style h5, .panel-style p{
+    margin: 0;
+    padding: 0;
+}
+
+.panel-style h5 {
+    color: #027BFE;
+}
+
+.panel-style li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.panel-style li:before {
+    content: "➔";
+    padding-right: 10px;
+    color: #027BFE;
+    left: 0px;
+}
+
+.panel-style ul {
+    margin: 2.5% 0;
+    list-style: none;
+}
+
+#panel-active {
+    display: block;
+}
+
+/* Project section */
+#project {
+    background-color: #F5F5F5;
+    background-color: rgba(2,123,254, 0.9);
+    text-align: center;
+}
+
+#project-container {
+    margin: 2.5% 0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#project-intro {
+    width: 100%;
+}
+
+.project-box {
+    width: 25%;
+    padding: 3% 3%;
+    margin: 1% 1%;
+    background-color: white;
+    border-radius: 4px;
+    text-align: left;
+    -webkit-transition: all 500ms ease;
+	transition: all 300ms ease;
+    box-shadow: 0 10px 30px -15px rgb(2, 100, 204);
+}
+
+.project-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-box li {
+    padding-right: 10px;
+}
+
+.project-box i {
+    font-size: 50px;
+    color: rgba(2,123,254, 0.9);
+}
+
+.project-box:hover {
+    -webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.project-box a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.project-box::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: #027BFE;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+}
+
+.project-box a:hover {
+    color: #027BFE;
+    text-decoration: underline;
+}
+
+#project-intro a {
+    width: 100%;
+    text-decoration: none;
+    color: #F5F5F5;
+    margin: 0 2px;
+    padding: 2px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#project-intro a:hover::after, nav a:hover::after, .project-box:hover::after {    
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#project-intro a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+}
+
+/* Contact us */
+#contact {
+    text-align: center;
+}
+
+.entry {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0;
+    width: 100%;
+}
+
+.entry p {
+    margin: 0;
+    width: 20%;
+    text-align: left;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5% auto;
+    width: 60%;
+}
+
+form input {
+    width: fit-content;
+    border-radius: 4px;
+    border: 3px solid#027BFE;
+    padding: .5% 1%;
+    background-color: white;
+    color: black;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    border-radius: 4px;
+    background-color: #027BFE;
+    width: auto;
+    text-align: center;
+    padding: 2% 4%;
+    width: fit-content;
+    border: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+
+form p {
+    text-align: center;
+    margin: 5% 0;
+}
+
+textarea {
+    resize: none;
+    padding: 1em 1em 1em 1em;
+    width: 75%!important;
+    border-radius: 4px;
+    border: 3px solid#027BFE;
+    background-color: white;
+    color: black;
+}
+
+#right-align {
+    text-align: right;
+}
+
+/* FOOTER */
+footer {
+    padding-top: 3%;
+    text-align: center;
+    background-color: #027BFE;
+}
+
+footer div {
+    width: 100%;
+    padding: 2% 0;
+    font-weight: 400;
+    font-size: 9pt;
+    color: white;
+}
+
+.circle-icon {
+    font-size: 1.5em;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px!important;
+    vertical-align: middle;
+    padding: 5px;
+    color: #027BFE;
+    margin: 0 1%;
+    cursor: pointer;
+}
+
+/* BUTTON SECTION */
+
+#button {
+    border-radius: 4px;
+    border: 3px solid#027BFE;
+    width: auto;
+    text-align: center;
+    padding: 1%;
+    width: fit-content;
+    margin: 2.5% 0;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#button a {
+    text-decoration: none;
+    color:  #027BFE;
+}
+
+#button:hover {
+    background-color: rgb(2,123,254, 0.1);
+}
+
+@media (max-width:1000px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width:800px) {
+    #about-content {
+        width: 100%;
+        color: white;
+        padding-right: 0;
+    }
+
+    #about-image {
+        width: 0;
+        padding-left: 0;
+        display: none;
+    }
+
+    body,h1,ul {
+        margin: 0;
+        padding: 0;
+        font-size: 11pt;
+        line-height: 1.6;
+    }
+    
+    p {
+        font-size: 11pt;
+    }
+    
+    h1 {
+        font-size: 28pt;
+    }
+    
+    h2 {
+        font-size: 22pt;
+        margin: 0;
+    }
+    
+    #introduction, #about, #experience, #project, #contact, footer, header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    header {
+        width: 80%;
+    }
+
+    .project-box {
+        width: 90%;
+        padding: 5% 5%;
+        margin: 2% 2%;
+    }
+
+    .circle-icon {
+        font-size: 1.2em;
+        width: 20px;
+        height: 20px;
+        line-height: 20px!important;
+    }
+}
+
+@media (max-width:700px) {
+    #tablist {
+        width: 100%;
+        margin-right: 0%;
+        flex-direction: row;
+    }
+
+    .tablist-style {
+        border-bottom: solid 3px grey;
+        border-left: none;
+    }
+
+    #job-panel {
+        width: 100%;
+        margin: 0;
+    }
+
+    #experience-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:550px) {
+    #introduction, #about, #experience, #project, #contact, footer, header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    nav li {
+        margin: 0;
+        padding-right: 2px;
+        font-size: 11pt;
+        line-height: 1.6;
+    }
+
+    #introduction-text {
+        width: 100%;
+    }
+
+    #introduction-image {
+        width: 0;
+        padding: 0;
+        display: none;
+    }
+
+    #experience, #about, #project, #contact {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    #introduction {
+        margin-top: 30%;
+        margin-bottom: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    form {
+        width: 100%;
+    }
+
+    p {
+        font-size: 10pt!important;
+    }
+}
+

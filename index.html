@@ -1,46 +1,192 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Steven Limcorn</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-site-verification" content="1E3C_BcBUk2CJf9-9fG3-30tq4N-mdAn8dC2D9Zyvzo"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-</head>
-<body id="polygon">
-	<div class = "profile">
-		<table>
-			<tr id ="nav-table">
-				<td class="nav"><a href="index.html" class="nav-bar">Home</a></td>
-				<td class="nav"><a href="about.html" class="nav-bar">About</td>
-				<td class="nav"><a href="experience.html" class="nav-bar">Work</td>	
-			</tr>
-		</table>
-		<div class="title">
-			<p style= "color: gray; font-size: medium;">Introduction</p>
-			<h2 style="font-weight: normal;">Hi there!</h2>
-			<p>I'm Steven, a computer science student based in <br>Brisbane, QLD</p>
-		</div>
-	</div>
-	<div id = "contacts">
-		<ul>
-			<li class="facebook">
-				<a href="https://www.facebook.com/steven.limcorn" target="_blank" class="fa fa-facebook fa-lg large"></a>
-			</li>
-			<li class="instagram">
-				<a href="https://www.instagram.com/steven_limcorn/" target="_blank" class="fa fa-instagram fa-lg large"></a>
-			</li>	
-			<li class="snapchat">
-				<a href="https://www.snapchat.com/add/stevenlimcorn" target="_blank" class="fa fa-snapchat-ghost fa-lg large"></a>					
-			</li>
-			<li class="linkedin">
-				<a href="https://www.linkedin.com/in/stevenlimcorn" target="_blank" class="fa fa-linkedin fa-lg large"></a>
-			</li>
-		</ul>
-	</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Steven Limcorn</title>
+        <meta name="google-site-verification" content="1E3C_BcBUk2CJf9-9fG3-30tq4N-mdAn8dC2D9Zyvzo">
+        <meta name="description" content="A personal website created by Steven Limcorn, to display and promote myself to employers">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Images/logo.png" style="border-radius: 100%;">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/0a4b0b2c0f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                </ul>
+            </nav>
+            <div id="header-button">
+                <a href="#contact">CONTACT</a>
+            </div>
+            <!-- <h4 style="color: #027BFE;"><a href="#" style="text-decoration: none; color: inherit;font-weight: 600;">Contact</a></h4> -->
+        </header>
+        
+        <!--INTRODUCTION-->
+        <div id="introduction">
+            <div id="introduction-text">
+                <p style="color: #027BFE;">Hello my name is</p>
+                <h1>Steven Limcorn<span style="color: #027BFE;">.</span></h1>
+                <p style="color: #7f7f7f;">I'm a computer science student studying at 
+                    <a target="_blank" href="https://www.uq.edu.au/" style="color:#502984;text-decoration: none;">
+                        The University of Queensland.</a> I have a huge interest in deep learning, specific areas like Natural Language
+                        Processing (NLP) and Computer Vision.
+                </p>
+                <div id="button">
+                    <a href="#contact">Get In Touch</a>
+                </div>
+            </div>
+            <div id="introduction-image">
+                <img src="Images/deep learning image.png" width="100%">
+            </div>
+        </div>
+    
+        <!--ABOOUT ME-->
+        <div id="about">
+            <div id="about-content">
+                <h2 style="color: black;">About Me<span style="color: white">.</span></h2>
+                <p>Hello! My name is Steven Limcorn and I am a deep learning enthusiast.
+                    My interest in deep learning started when my friend introduced me to deep learning. 
+                    I was fascinated how complex algorithms can solve what was thought to be impossible for a computer.
+                </p>
+                <p>
+                    My main focus these days are building languages and medical related
+                    projects such as evaluating MRI/X-ray images on several computer vision problems as well as building low resources language models. For those of you
+                    who have great ideas and would like to work together, you can contact me <a href="#contact" style="color: black;">here</a>.
+                </p>
+                <p>Here are a few technologies I've been working with:</p>
+                <ul>
+                    <li>Python</li>
+                    <li>Pytorch</li>
+                    <li>HuggingFace</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div id="about-image">
+                <img src="Images/mri image.png" width="100%">
+            </div>
+        </div>
+
+        <!--EXPERIENCE-->
+        <div id="experience">
+            <h2 style="color: black;">Experience<span style="color: #027BFE;">.</span></h2>
+            <div id="experience-content">
+                <ul id="tablist">
+                    <li class="tablist-style" id="tab-active" onclick="setActive(this)">Boss Tradie</li>
+                    <li class="tablist-style" onclick="setActive(this)">Trinunggal Komara</li>
+                </ul>
+                <div id="job-panel">
+                    <div class="panel-style" id="panel-active">
+                        <h3>Front End Developer Intern</h3>
+                        <h5>December 2020 - February 2021</h5>
+                        <ul>
+                            <li>Maintained and improved client’s WordPress website based on loading speed, SEO and page designs using WordPress plugins and custom PHP, JavaScript, CSS, and HTML custom codes.</li>
+                            <li>Came up new ideas to acquire new clients on website page such as “Tradie Salary Calculator” and “Building Health Diagnosis”.</li>
+                            <li>Rebuild company website for a better user experience.</li>
+                            <li>Increased traffic to website by 25%, acquiring more than 10 new clients for the 3 months.</li>
+                            <li>Technologies used: WordPress, HTML, CSS, JavaScript.</li>
+                        </ul>
+                    </div>
+                    <div class="panel-style">
+                        <h3>Graphic Designer</h3>
+                        <h5>December 2019 - February 2020</h5>
+                        <ul>
+                            <li>Designed jeans whisker pattern based on client requirements to be manufactured, tested, and shipped to countries like U.S and Australia.</li>
+                            <li>Managed and prepared detailed weekly reports on each client design progress, identifying issues and possible actions to take.</li>
+                            <li>Taught new employee candidates on the process of designing jeans whiskers and interviewed several candidates.</li>
+                            <li>Increased efficiency of production line from 20 to 60 jeans/hr by utilizing laser jeans machine.</li>
+                            <li>Software used: Adobe Photoshop and Corel Draw.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PROJECTS-->
+        <div id="project">
+            <div id="project-intro">
+                <h2 style="color: black;">Personal Projects<span style="color: white;">.</span></h2>
+                <a href="">view my github</a>
+            </div>
+            <div id="project-container">
+                <div class="project-box">
+                    <img src="Images/huggingface.png" width="50px"/>
+                    <h4>Melayu BERT Language Model</h4>
+                    <p>A Malaysian Mask Language Model generated from pretrained BERT model.</p>
+                    <ul>
+                        <li><img src="Images/python.png" width="30px"></li>
+                        <li><img src="Images/pytorch-logo.png" width="30px"></li>
+                        <li><img src="Images/pandas.png" width="30px"></li>
+                        <img src="Images/huggingface.png" width="30px"/>
+                    </ul>
+                    <a target="_blank" href="https://huggingface.co/StevenLimcorn/MelayuBERT">view on huggingface →</a>
+                </div>
+                <div class="project-box">
+                    <i class="fas fa-viruses"></i>
+                    <h4>Covid-19 Chest X-Ray Classification</h4>
+                    <p>An image classification model that classifies chest X-Ray images.</p>
+                    <ul>
+                        <li><img src="Images/python.png" width="30px"></li>
+                        <li><img src="Images/pytorch-logo.png" width="30px"></li>
+                        <li><img src="Images/pandas.png" width="30px"></li>
+                    </ul>
+                    <a target="_blank" href="https://github.com/stevenlimcorn/covid-detection">view on github →</a>
+                </div>
+                <div class="project-box">
+                    <img src="Images/huggingface.png" width="50px"/>
+                    <ul>
+                        <li><img src="Images/python.png" width="30px"></li>
+                        <li><img src="Images/pytorch-logo.png" width="30px"></li>
+                        <li><img src="Images/pandas.png" width="30px"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact">
+            <h2 style="color: black;">Contact Me<span style="color: #027BFE;">.</span></h2>
+            <form action="https://formsubmit.co/stevenlimcorn@gmail.com" method="POST">
+                <p>If you have a similar project in mind and would like to share your ideas and collaborate with me, feel free to contact me. My inbox is always open for new projects and ideas.</p>
+                <div class="entry">
+                    <p>Email</p> 
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="entry">
+                    <p>Name</p>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="entry">
+                    <p>Message</p>
+                    <textarea name="message" style="width:25%;overflow:auto;" placeholder="Message"></textarea>
+                </div>
+                <div id="right-align">
+                    <button type="submit">Send</button>
+                </div>
+           </form>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <a target="_blank" href="https://www.facebook.com/steven.limcorn/"><i class="fab fa-facebook-f circle-icon"></i></a>
+            <a target="_blank" href="https://twitter.com/stevenlimcorn"><i class="fab fa-twitter circle-icon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/stevenlimcorn/"><i class="fab fa-linkedin-in circle-icon"></i></a>
+            <a target="_blank" href="https://github.com/stevenlimcorn"><i class="fab fa-github circle-icon"></i></a>
+            <a target="_blank" href="https://www.instagram.com/steven_limcorn/"><i class="fab fa-instagram circle-icon"></i></a>
+            <div>
+                &copy; 2021 Steven Limcorn
+            </div>
+        </footer>
+        
+        <script src="script.js" async defer></script>
+    </body>
 </html>
