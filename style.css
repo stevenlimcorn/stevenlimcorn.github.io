@@ -589,6 +589,10 @@ footer div {
         font-size: 11pt;
         line-height: 1.6;
     }
+	
+    #header-button {
+        font-size: 11pt;
+    }
 
     #introduction-text {
         width: 100%;
@@ -618,6 +622,22 @@ footer div {
 
     p {
         font-size: 10pt!important;
+    }
+}
+
+@media (max-width:450px) {
+
+    header {
+        width: 90%;
+    }
+
+    nav li {
+        margin: 0;
+        font-size: 9pt;
+    }
+    
+    #header-button {
+        font-size: 9pt;
     }
 }
 
